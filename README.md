@@ -23,14 +23,12 @@ This project demonstrates how Worker Threads improve performance for CPU-bound t
 - Execution without workers: 1:49.571
 - Execution with Worker Pool (4 workers): 28.386s
 
-```md
 ## Run with Docker
 ```bash
 docker build -t cpu-worker-pool .
 docker run --rm cpu-worker-pool
-
+```
 ## Production Deployment
-
 This project was deployed using Railway (Docker-based cloud platform).
 
 The application runs as a background worker and outputs logs (no HTTP endpoint).
